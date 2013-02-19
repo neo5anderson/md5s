@@ -51,7 +51,7 @@ echo.^<head^>>> %tmp%\%OUTPUT%.header
 echo.	^<meta http-equiv="Content-type" content="text/html; charset=GBK"^>>> %tmp%\%OUTPUT%.header
 echo.	^<title^>%HTML_TITLE%^</title^>>> %tmp%\%OUTPUT%.header
 echo.	^<meta name="generator" content="%~n0 v0.1"^>>> %tmp%\%OUTPUT%.header
-echo.	^<meta name="version" content="S5 1.2a2"^>>> %tmp%\%OUTPUT%.header
+echo.	^<meta name="version" content="S5 1.1"^>>> %tmp%\%OUTPUT%.header
 echo.	^<meta name="author" content="Neo"^>>> %tmp%\%OUTPUT%.header
 echo.	^<meta name="company" content="NEO's Edition is Okay~"^>>> %tmp%\%OUTPUT%.header
 echo.>> %tmp%\%OUTPUT%.header
