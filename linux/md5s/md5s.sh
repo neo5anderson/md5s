@@ -27,19 +27,21 @@ fi
 read -p '是否要发布，默认 [No]：' IS_RELEASE
 if [ "" == "$IS_RELEASE" ]; then
 	# S5_PATH='md5s/s5'
-	S5_PATH='md5s/default'
+	S5_PATH='default'
 else
 	echo $IS_RELEASE | grep -i 'Y' > /dev/null 2>&1
 	if [ $? -eq 0 ]; then
 		S5_PATH='http://222.134.70.138:30086/neo/utils/s5'
 	else
 		# S5_PATH='md5s/s5'
-		S5_PATH='md5s/default'
+		S5_PATH='default'
 	fi
 fi
 
 MD_FILE=todo.markdown
 MARKDOWN_CALL=markdown
+
+OUTPUT_FOLDER=$(echo `pwd` | sed "s/\/md5s$//")
 
 if [ ! -e $MD_FILE ]; then
 	echo "MD_FILE ($MD_FILE) not found"
@@ -123,5 +125,6 @@ echo '</html>'>> /tmp/$OUTPUT.footer
 echo ''>> /tmp/$OUTPUT.footer
 echo '.'
 
-cat /tmp/$OUTPUT.header /tmp/$OUTPUT.slide /tmp/$OUTPUT.footer > ../$OUTPUT.html
+cat /tmp/$OUTPUT.header /tmp/$OUTPUT.slide /tmp/$OUTPUT.footer > $OUTPUT_FOLDER/$OUTPUT.html
 echo 完成
+

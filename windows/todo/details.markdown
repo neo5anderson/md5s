@@ -57,5 +57,3 @@ operating systems. The Microsoft Windows NT-family of operating systems
 and OS/2 added `.cmd`. Batch files for other environments may have  
 different extensions, e.g. `.btm` in 4DOS and 4NT related shells.
 
-# 2. TODO
-

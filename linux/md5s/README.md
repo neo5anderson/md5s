@@ -20,9 +20,8 @@ Markdown + S5 网络幻灯片实用工具
 	- `**` 表示进一步强调 (strong)
 	- `******` 表示水平线 (hr)
 
-+ 运行 `./md5s`
-
-> Linux 版本的 md5s 依赖 markdown 的支持～
++ 运行 `./md5s`  
+注意：Linux 版本的 md5s 依赖 markdown 的支持～
 
 	- 输入 HTML 标题
 	- 输入 footer 标题
