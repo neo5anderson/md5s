@@ -26,15 +26,13 @@ fi
 
 read -p '是否要发布，默认 [No]：' IS_RELEASE
 if [ "" == "$IS_RELEASE" ]; then
-	# S5_PATH='md5s/s5'
-	S5_PATH='default'
+	S5_PATH='md5s/default'
 else
 	echo $IS_RELEASE | grep -i 'Y' > /dev/null 2>&1
 	if [ $? -eq 0 ]; then
 		S5_PATH='http://222.134.70.138:30086/neo/utils/s5'
 	else
-		# S5_PATH='md5s/s5'
-		S5_PATH='default'
+		S5_PATH='md5s/default'
 	fi
 fi
 
@@ -62,7 +60,7 @@ echo '<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" xml:lang="zh-CN">'>> 
 echo '<head>'>> /tmp/$OUTPUT.header
 echo '	<meta http-equiv="Content-type" content="text/html; charset=UTF-8">'>> /tmp/$OUTPUT.header
 echo "	<title>$HTML_TITLE</title>">> /tmp/$OUTPUT.header
-echo "	<meta name=\"generator\" content=\"`basename $0 .sh` v0.1\">">> /tmp/$OUTPUT.header
+echo "	<meta name=\"generator\" content=\"`basename $0 .sh` v0.2\">">> /tmp/$OUTPUT.header
 echo '	<meta name="version" content="S5 1.1">'>> /tmp/$OUTPUT.header
 echo '	<meta name="author" content="Neo">'>> /tmp/$OUTPUT.header
 echo "	<meta name=\"company\" content=\"NEO's Edition is Okay~\">">> /tmp/$OUTPUT.header
@@ -73,6 +71,8 @@ echo "	<link rel=\"stylesheet\" href=\"$S5_PATH/slides.css\" type=\"text/css\" m
 echo "	<link rel=\"stylesheet\" href=\"$S5_PATH/outline.css\" type=\"text/css\" media=\"screen\" id=\"outlineStyle\" />">> /tmp/$OUTPUT.header
 echo "	<link rel=\"stylesheet\" href=\"$S5_PATH/print.css\" type=\"text/css\" media=\"print\" id=\"slidePrint\" />">> /tmp/$OUTPUT.header
 echo "	<link rel=\"stylesheet\" href=\"$S5_PATH/opera.css\" type=\"text/css\" media=\"projection\" id=\"operaFix\" />">> /tmp/$OUTPUT.header
+echo ''>> /tmp/$OUTPUT.header
+echo "	<style>img { width: 100%; border: 1px solid black }</style>">> /tmp/$OUTPUT.header
 echo ''>> /tmp/$OUTPUT.header
 echo "	<script src=\"$S5_PATH/slides.js\" type=\"text/javascript\"></script>">> /tmp/$OUTPUT.header
 echo '</head>'>> /tmp/$OUTPUT.header

@@ -37,11 +37,11 @@
 
 # 状态模式
 
-![状态模式 UML](pic/State.png "状态模式 UML")
+![状态模式 UML](https://raw.github.com/neo5simple/md5s/master/windows/md5s/pic/State.png "状态模式 UML")
 
 # 状态模式 与 策略模式
 
-![策略模式 UML](pic/Strategy.png "策略模式 UML")
+![策略模式 UML](https://raw.github.com/neo5simple/md5s/master/windows/md5s/pic/Strategy.png "策略模式 UML")
 
 # 状态模式 与 策略模式
 
@@ -61,11 +61,11 @@
 
 # 装饰模式
 
-![装饰模式 UML](pic/Decorator.png "装饰模式 UML")
+![装饰模式 UML](https://raw.github.com/neo5simple/md5s/master/windows/md5s/pic/Decorator.png "装饰模式 UML")
 
 # 装饰模式 与 代理模式
 
-![代理模式 UML](pic/Proxy.png "代理模式 UML")
+![代理模式 UML](https://raw.github.com/neo5simple/md5s/master/windows/md5s/pic/Proxy.png "代理模式 UML")
 
 # 装饰模式 与 代理模式
 

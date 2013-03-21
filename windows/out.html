@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- All contents under GPL license. loving Delly, NEO's Edition is Okay~ -->
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" xml:lang="zh-CN">
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=GBK">
+	<title>设计模式</title>
+	<meta name="generator" content="md5s v0.2">
+	<meta name="version" content="S5 1.1">
+	<meta name="author" content="Neo">
+	<meta name="company" content="NEO's Edition is Okay~">
+
+	<meta name="defaultView" content="slideshow" />
+	<meta name="controlVis" content="hidden" />
+	<link rel="stylesheet" href="md5s/dist/default/slides.css" type="text/css" media="projection" id="slideProj" />
+	<link rel="stylesheet" href="md5s/dist/default/outline.css" type="text/css" media="screen" id="outlineStyle" />
+	<link rel="stylesheet" href="md5s/dist/default/print.css" type="text/css" media="print" id="slidePrint" />
+	<link rel="stylesheet" href="md5s/dist/default/opera.css" type="text/css" media="projection" id="operaFix" />
+
+	<style>img { width: 100%; border: 1px solid black; }</style>
+
+	<script src="md5s/dist/default/slides.js" type="text/javascript"></script>
+</head>
+<body>
+	<div class="layout">
+		<div id="controls"></div>
+		<div id="currentSlide"></div>
+		<div id="header"></div>
+		<div id="footer">
+			<h1>设计模式</h1>
+			<h2>2013-03-21 @ neo</h2>
+		</div>
+	</div>
+
+	<div class="presentation">
+
+		<div>
+		</div>
+
+		<div class="slide">
+			<h1>设计模式</h1>
+			<hr />
+			<h2>斑驳</h2>
+		</div>
+
+		<div class="slide">
+			<h1>生产力工具介绍</h1>
+			<ul>
+			<li><em>Vim</em> - 纯文本 <strong>编辑器</strong></li>
+			<li><em>Markdown</em> - 纯文本转标记语言 <strong>工具</strong></li>
+			<li><em>S5</em> - 标准化简单翻页 <strong>显示系统</strong></li>
+			<li><em>Git</em> - 分布式快速 <strong>版本控制系统</strong></li>
+			<li><em>Batch</em> - Windows 平台 shell <strong>脚本</strong></li>
+			</ul>
+		</div>
+
+		<div class="slide">
+			<h1>MD5S</h1>
+			<p>一个由 Markdown 和 S5 组成的实用 <strong>工具</strong>， <br />
+			用来动态生成 <em>网页版的 PPT</em>，比如当前页面。</p>
+			<ul>
+			<li>文件占地面积极小</li>
+			<li>页面源码存储，方便扩展</li>
+			<li>性能基本没有要求</li>
+			<li>仅依赖浏览器，跨平台</li>
+			<li>字体、排版不依赖生成器</li>
+			</ul>
+		</div>
+
+		<div class="slide">
+			<h1>状态模式</h1>
+			<p>当控制一个对象状态转换的条件表达式过于复杂，将其判断的逻辑 <br />
+			转移到表示不同状态的一系列类当中去，可以把复杂的逻辑简化。</p>
+			<p>适用于那些对象行为取决于其 <strong>运行状态</strong> 的场合。</p>
+			<p>具体的做法： <br />
+			将特定状态相关的行为局部化，并将不同状态的行为分割，可通过 <br />
+			定义新的子类来增加状态和转换。也就是把各种状态逻辑转移到子 <br />
+			类，从而减少了相互间的依赖。</p>
+		</div>
+
+		<div class="slide">
+			<h1>状态模式</h1>
+			<p><img src="https://raw.github.com/neo5simple/md5s/master/windows/pic/State.png" alt="状态模式 UML" title="状态模式 UML" /></p>
+		</div>
+
+		<div class="slide">
+			<h1>状态模式 与 策略模式</h1>
+			<p><img src="https://raw.github.com/neo5simple/md5s/master/windows/pic/Strategy.png" alt="策略模式 UML" title="策略模式 UML" /></p>
+		</div>
+
+		<div class="slide">
+			<h1>状态模式 与 策略模式</h1>
+			<p>状态模式是基于对象 <strong>内部状态变化</strong> 来控制使用行为。</p>
+			<p>策略模式通过封装多个算法在 <strong>不同时间</strong> 应用 <strong>不同业务</strong> 。</p>
+		</div>
+
+		<div class="slide">
+			<h1>装饰模式</h1>
+			<p><strong>可动态</strong> 地去扩展一个对象，不必改变原有类文件以及继承关系。 <br />
+			该模式将该类中的装饰功能移除，简化代码之余，还有效地将类 <br />
+			的核心职责与装饰功能区分，也避免装饰过程中的逻辑重复。</p>
+			<p>具体的做法： <br />
+			装饰对象包含一个真实的对象引用，并接受客户端的所有请求， <br />
+			添加所需扩展后，再将请求转发到真实对象。  </p>
+		</div>
+
+		<div class="slide">
+			<h1>装饰模式</h1>
+			<p><img src="https://raw.github.com/neo5simple/md5s/master/windows/pic/Decorator.png" alt="装饰模式 UML" title="装饰模式 UML" /></p>
+		</div>
+
+		<div class="slide">
+			<h1>装饰模式 与 代理模式</h1>
+			<p><img src="https://raw.github.com/neo5simple/md5s/master/windows/pic/Proxy.png" alt="代理模式 UML" title="代理模式 UML" /></p>
+		</div>
+
+		<div class="slide">
+			<h1>装饰模式 与 代理模式</h1>
+			<p>装饰模式在 <strong>运行时</strong> 改变类 <strong>自身</strong> 的行为，增加或减少， <br />
+			区别于继承类在编译时的扩展 。</p>
+			<p>代理模为解决类之间的耦合，作为类的 <strong>中间件</strong> 方便复用和 <br />
+			隐蔽， <strong>编译时</strong> 已经生效 。</p>
+		</div>
+	</div>
+
+</body>
+</html>
+
